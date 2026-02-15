@@ -1,0 +1,24 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sebov" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.129.0",
+]
+
+[project.scripts]
+app-template = "app_template:main"
+
+[build-system]
+requires = ["uv_build>=0.10.2,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "poethepoet>=0.41.0",
+]
